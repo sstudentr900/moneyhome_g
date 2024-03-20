@@ -1,0 +1,124 @@
+/*BaconservatorEdit*/
+[class^='tableDiv'] [class^='inputDiv']{
+  flex-direction: row;
+  align-items: center;
+}
+[class^='tableDiv'] [class^='inputDiv'] [class^='label']{
+  flex: 0 0 80px;
+  color: #9A9FAC;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+[class^='tableDiv'] [class^='inputDiv'] [class^='input'] input[type='email'],
+[class^='tableDiv'] [class^='inputDiv'] [class^='input'] input[type='password'],
+[class^='tableDiv'] [class^='inputDiv'] [class^='input'] input[type='text']{
+  flex: 1 1;
+  border-radius: 8px;
+  border: 1px solid #F0F1F7;
+  background: #FCFDFE;
+  padding: 8px;
+  max-width: 480px;
+}
+/*commidityItem*/
+[class*='_commidityItem'] [class*='title']{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.48px;
+}
+[class*='_commidityItem'] [class*='title']+div{
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #fff;
+}
+[class*='_commidityItem'] [class*='price']{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.48px;
+}
+[class*='_commidityItem'] [class*='buy']{
+  padding: 4px 12px;
+}
+/*彈窗*/
+/* .publicOverlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/*表單*/
+/* .publicform{
+  z-index: 10;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+  margin: 60px 0;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: -2px 1px 10px #00000010;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #d7d7d7;
+}
+.publicform .title{
+  text-align: left;
+  margin-bottom: 20px;
+}
+.publicform .title h3{
+    font-size: 28px;
+}
+.publicform li{
+  position: relative;
+}
+.publicform li textarea,
+.publicform li select,
+.publicform li input[type='email'],
+.publicform li input[type='password'],
+.publicform li input[type='text']{
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+.publicform li .puplicError{
+  left: 0px;
+  bottom: -21px;
+}
+.publicform .bottom{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+}
+.publicform .bottom .publicBtn2:nth-child(1){
+    background: none;
+    color: #666;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.publicform .bottom .publicBtn2:nth-child(1):hover{
+    color: #fff;
+    background-color: #5e7da3;
+    border: 1px solid #5e7da3;
+}
+.publicform .bottom button{
+    width: auto;
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #5e7da3;
+    border: 1px solid #5e7da3;
+} */
