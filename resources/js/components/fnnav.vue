@@ -153,9 +153,10 @@
     }
   }
   @media (max-width: 680px){
+    [class^='fnnav']{
+      box-shadow: none
+    } 
     [class^='_mw1340']{
-      /* padding-left: 20px;
-      padding-right: 20px; */
       padding: 8px 20px;
     }
     [class^='logoDiv']{
