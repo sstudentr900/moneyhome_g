@@ -154,7 +154,10 @@
   }
   @media (max-width: 680px){
     [class^='fnnav']{
-      box-shadow: none
+      box-shadow: none;
+    } 
+    [class^='fnnav']>div{
+      padding-bottom: 0;
     } 
     [class^='_mw1340']{
       padding: 8px 20px;
