@@ -273,17 +273,18 @@
           </div>
         </div>
       </div> -->
-      <div class="swiper" data-aos="fade-up" data-aos-duration="600">
+      <!-- <div class="swiperDiv" data-aos="fade-up" data-aos-duration="600"> -->
+        <!-- :style="{
+          '--swiper-navigation-color': '#134A56',
+          '--swiper-navigation-sides-offset': 0,
+        }"
+        :navigation="true" 
+        :spaceBetween="42" 
+          :modules="modules" -->
+      <div class="swiperDiv">
         <swiper 
-          :style="{
-            '--swiper-navigation-color': '#134A56',
-            '--swiper-navigation-sides-offset': 0,
-          }"
-          :navigation="true" 
           :slidesPerView="1"
-          :spaceBetween="42"
           :breakpoints="{ 760:{ slidesPerView: 2}, 1024:{ slidesPerView: 3} }"
-          :modules="modules" 
           class="mySwiper"
           >
           <swiper-slide v-for="(item,index) in nowdata" :key="index">
@@ -397,17 +398,21 @@
   max-width: 210px;
   width: 100%;
 }
-[class^='home_article'] .swiper{
+[class^='home_article'] .swiperDiv{
   margin-bottom: 32px;
-  padding: 0 38px;
+  /* padding: 0 10px; */
+  /* padding: 0 38px; */
 }
-[class^='home_article'] .swiper [class^='item']{
+[class^='home_article'] .swiper{
+  /* padding: 0 38px; */
+}
+[class^='home_article'] .swiperDiv [class^='item']{
   border-top-right-radius: 80px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   padding: 36px 32px 32px;
 }
-[class^='home_article'] .swiper [class^='link_']{
+[class^='home_article'] .swiperDiv [class^='link_']{
   padding: 15px;
   width: 50px;
   height: 50px;
@@ -449,12 +454,23 @@
   }
 }
 @media (max-width: 660px){
+  /* [class^='home_article'] .swiperDiv,
+  [class^='home_article'] .swiper{
+    padding: 0;
+  } */
   [class^="home_article"] [class^="_mw1340"]{
     padding: 0 20px;
   }
 }
 
 </style>
-
-
+<!-- <style>
+  @media (max-width: 660px){
+    [class^='home_article'] .swiperDiv .swiper-button-prev, 
+    [class^='home_article'] .swiperDiv .swiper-button-next{
+      display: none;
+      opacity: 0;
+    }
+  }
+</style> -->
 
