@@ -19,6 +19,8 @@ request.interceptors.request.use(config => {
     config.headers.Authorization = `Bearer ${userStore.token}` 
     //錯誤 token
     // config.headers.token = `Bearer ${userStore.token}` 
+    //ngrok-skip-browser-warning
+    config.headers.ngrokSkipBrowserWarning = true
   }
   return config
 }, error => {
