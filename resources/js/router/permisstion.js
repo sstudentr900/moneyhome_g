@@ -68,15 +68,13 @@ router.beforeEach(async (to,from,next)=>{
     // console.log('沒有登入')
     // console.log('balogin',to.name!='balogin')
     // next();
-    if(
-      to.name.indexOf('ba')===0 && to.name!='balogin'
-    ){
+    if(to.name.indexOf('ba')===0 && to.name!='balogin'){
       console.log('沒有登入不能去',to.name,'但能去balogin')
       // next({name:'balogin',query:{redirect:to.path}});
       next({name:'balogin'});
     }else{
       console.log('沒有登入但能去',to.name)
-      next();
+      next({name:'fnhome'});
     }
   }
 
